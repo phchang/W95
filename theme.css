@@ -62,7 +62,7 @@
   --accent-3: #00FF00;
   --accent-4: #FFFF00;
   --accent-5: #FF0000;
-  --accent-6: #000000;
+  --accent-6: #00007b;
 
   --accent-1-muted: #ff79c6;
   --accent-2-muted: #8be9fd;
@@ -84,7 +84,7 @@
   --interactive-normal: var(--accent-1);
   --interactive-hover: var(--accent-1);
   --interactive-accent: var(--accent-6);
-  --interactive-accent-hover: var(--accent-2-muted);
+  --interactive-accent-hover: var(--background-primary);
 
   --background-editor-primary: #ffffff;
 
@@ -151,7 +151,7 @@ body {
   --clickable-icon-radius: 0;
 }
 
-button, button.mod-cta {
+button, button.mod-cta, button:not(.clickable-icon) {
   background-color: var(--background-primary);
   border: 2px outset var(--color-base-30);
   border-radius: 0;
