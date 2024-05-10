@@ -1,3 +1,39 @@
+/* @settings
+
+name: W95 Display Properties
+id: w95-display-props
+settings:
+    -
+        id: w95-display-props-font
+        title: Font
+        type: heading
+        level: 3
+    -
+        id: font-ui-smaller
+        title: Smaller font size (px)
+        type: variable-number
+        default: 11
+        format: px
+    -
+        id: font-ui-small
+        title: Small font size (px)
+        type: variable-number
+        default: 12
+        format: px
+    -
+        id: font-ui-medium
+        title: Medium font size (px)
+        type: variable-number
+        default: 14
+        format: px
+    -
+        id: font-ui-large
+        title: Large font size (px)
+        type: variable-number
+        default: 20
+        format: px
+*/
+
 .theme-dark,
 .theme-light  {
   color-scheme: light;
@@ -75,7 +111,7 @@
   --bold-color: #000000;
   --italic-color: #343b58;
   --text-highlight-bg: #485e3066;
-  --text-faint: #9699a388;
+  --text-faint: #4f5057;
 
   --accent-h: 240;
   --accent-s: 100%;
