@@ -388,6 +388,11 @@ select.dropdown {
   margin-right: 0.25rem;
 }
 
+/* search results */
+.search-result:not(.is-collapsed) .search-result-file-title {
+  color: var(--nav-item-color);
+}
+
 /* mobile */
 
 .is-mobile .workspace-drawer.mod-left {
@@ -400,4 +405,8 @@ select.dropdown {
 
 .is-mobile .nav-files-container {
   border: 4px ridge var(--color-base-25);
+}
+
+.is-mobile .empty-state-action {
+  background-color: transparent;
 }
