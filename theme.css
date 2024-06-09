@@ -32,10 +32,44 @@ settings:
         type: variable-number
         default: 20
         format: px
+    - 
+        id: w95-display-theme
+        title: Theme
+        type: heading
+        level: 3
+    - 
+        id: w95-display-themes
+        title: Select Theme
+        description: Select your preferred theme
+        type: class-select
+        allowEmpty: false
+        default: w95-default
+        options:
+        - 
+          label: W95
+          value: w95-default
+        - 
+          label: Reactionary
+          value: w95-reactionary
 */
 
+.w95-default {
+  --background-primary: #bdbebd;
+  --background-secondary: #bdbebd;
+  --nav-item-background-active: #00007b;
+  --nav-item-color-active: var(--accent-1);
+}
+
+.w95-reactionary {
+  --background-primary: #d4d0c8;
+  --background-secondary: #d4d0c8;
+  --text-normal: #181612;
+  --nav-item-background-active: #3a6ea5;
+  --nav-item-color-active: var(--accent-1);
+}
+
 .theme-dark,
-.theme-light  {
+.theme-light {
   color-scheme: light;
   --highlight-mix-blend-mode: darken;
   --mono-rgb-0: 255, 255, 255;
@@ -77,21 +111,21 @@ settings:
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
   --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-  0 2px 3px 0 rgba(0,0,0,.05),
-  0 1px 1.5px 0 rgba(0,0,0,.03),
-  0 1px 2px 0 rgba(0,0,0,.04),
-  0 0 0 0 transparent;
+    0 2px 3px 0 rgba(0, 0, 0, .05),
+    0 1px 1.5px 0 rgba(0, 0, 0, .03),
+    0 1px 2px 0 rgba(0, 0, 0, .04),
+    0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-  0 2px 3px 0 rgba(0,0,0,.1),
-  0 1px 1.5px 0 rgba(0,0,0,.03),
-  0 1px 2px 0 rgba(0,0,0,.04),
-  0 0 0 0 transparent;
+    0 2px 3px 0 rgba(0, 0, 0, .1),
+    0 1px 1.5px 0 rgba(0, 0, 0, .03),
+    0 1px 2px 0 rgba(0, 0, 0, .04),
+    0 0 0 0 transparent;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
-  0px 3.4px 6.7px rgba(0, 0, 0, .042),
-  0px 15px 30px rgba(0, 0, 0, .07);
+    0px 3.4px 6.7px rgba(0, 0, 0, .042),
+    0px 15px 30px rgba(0, 0, 0, .07);
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
-  0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-  0px 30px 90px rgba(0, 0, 0, 0.2);
+    0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2);
 
   --accent-1: #FFFFFF;
   --accent-2: #00FFFF;
@@ -124,16 +158,10 @@ settings:
 
   --background-editor-primary: #ffffff;
 
-  --background-primary: #bdbebd;
-  --background-secondary:#bdbebd;
-
   --border-highlight: var(--accent-1);
   --border-shadow: var(--color-base-55);
 
   --nav-files-background: var(--background-editor-primary);
-
-  --nav-item-color-active: var(--accent-1);
-  --nav-item-background-active: #00007b;
 
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.4);
 
@@ -187,14 +215,17 @@ body {
   --clickable-icon-radius: 0;
 }
 
-button, button.mod-cta, button:not(.clickable-icon) {
+button,
+button.mod-cta,
+button:not(.clickable-icon) {
   background-color: var(--background-primary);
   border: 2px outset var(--color-base-30);
   border-radius: 0;
   color: var(--color-base-100);
 }
 
-button:active, button.mod-cta:active {
+button:active,
+button.mod-cta:active {
   background-color: var(--background-primary);
   border: 2px inset var(--color-base-30);
   border-radius: 0;
@@ -225,7 +256,8 @@ select.dropdown {
   content: ' ';
 }
 
-.side-dock-settings, .side-dock-actions {
+.side-dock-settings,
+.side-dock-actions {
   gap: 0;
 }
 
@@ -318,7 +350,7 @@ select.dropdown {
   box-shadow: 1px 1px 0 var(--tab-outline-width) var(--tab-outline-color);
   color: var(--tab-text-color-active);
   background-color: var(--tab-background-active);
-  z-index:2;
+  z-index: 2;
 }
 
 .workspace-leaf-resize-handle {
@@ -330,11 +362,11 @@ select.dropdown {
   border: 4px ridge var(--color-base-25);
 }
 
-.nav-action-button:active {
-}
+.nav-action-button:active {}
 
 .nav-header {
-  padding: 5px; /* todo: make this more dynamic */
+  padding: 5px;
+  /* todo: make this more dynamic */
   background-color: var(--background-primary);
 }
 
@@ -380,7 +412,7 @@ select.dropdown {
   background-color: inherit;
 }
 
-.nav-folder.mod-root .nav-folder > .nav-folder-children {
+.nav-folder.mod-root .nav-folder>.nav-folder-children {
   border-left: var(--nav-indentation-guide-width) dotted var(--nav-indentation-guide-color);
 }
 
