@@ -53,14 +53,14 @@ settings:
           value: w95-reactionary
 */
 
-.w95-default {
+.theme-light {
   --background-primary: #bdbebd;
   --background-secondary: #bdbebd;
   --nav-item-background-active: #00007b;
   --nav-item-color-active: var(--accent-1);
 }
 
-.w95-reactionary {
+.theme-light.w95-reactionary {
   --background-primary: #d4d0c8;
   --background-secondary: #d4d0c8;
   --text-normal: #181612;
