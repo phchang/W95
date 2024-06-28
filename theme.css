@@ -392,6 +392,10 @@ select.dropdown {
   -webkit-text-fill-color: transparent;
 }
 
+.tree-item-self.is-being-renamed:focus-within {
+  color: var(--tab-text-color-active);
+}
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 16px;
