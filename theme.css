@@ -272,6 +272,7 @@ select.dropdown {
 .mod-right-split .workspace-tab-header-container-inner,
 .mod-left-split .workspace-tab-header-container-inner {
   gap: 0;
+  margin-left:1rem;
 }
 .mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
@@ -365,7 +366,7 @@ select.dropdown {
 }
 
 .workspace-leaf-resize-handle {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .workspace-tabs .workspace-leaf .view-content {
