@@ -193,12 +193,6 @@ settings:
   --h6-color: var(--header-color);
 }
 
-.theme-dark {
-  --background-editor-primary: #bdbebd;
-  --nav-item-color-active: var(--accent-1);
-  --nav-item-color: var(--accent-1);
-}
-
 body {
   /* Font sizes */
   --header-size: 1.4rem;
@@ -269,8 +263,7 @@ select.dropdown {
   gap: 0;
 }
 
-.workspace-tab-container .view-header {
-}
+.workspace-tab-container .view-header {}
 
 .workspace-tab-container .view-header-title-container {
   height: var(--header-height);
