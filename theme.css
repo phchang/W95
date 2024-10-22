@@ -299,7 +299,7 @@ select.dropdown {
 
   box-shadow: none;
 }
-
+.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner,
 .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner {
   border: 0;
 }
