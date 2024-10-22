@@ -264,7 +264,10 @@ select.dropdown {
 }
 
 .workspace-tab-container .view-header {
-  margin-bottom: 1px;
+}
+
+.workspace-tab-container .view-header-title-container {
+  height: var(--header-height);
 }
 
 .mod-left-split .workspace-tab-header-container-inner {
@@ -341,6 +344,10 @@ select.dropdown {
   position: relative;
 }
 
+.workspace-ribbon {
+  border-right: var(--divider-width) solid var(--border-shadow);
+}
+
 .workspace-ribbon.mod-left:before {
   border-bottom: 1px solid var(--accent-1);
   opacity: 0;
@@ -367,9 +374,10 @@ select.dropdown {
 .nav-action-button:active {}
 
 .nav-header {
-  padding: 5px;
+  height: var(--header-height);
   /* todo: make this more dynamic */
   background-color: var(--background-primary);
+  border-left: var(--divider-width) solid var(--border-highlight);
 }
 
 .nav-files-container {
@@ -381,7 +389,6 @@ select.dropdown {
 .nav-buttons-container {
   padding: 0;
   gap: 0;
-  margin-bottom: 1px;
 }
 
 .inline-title {
