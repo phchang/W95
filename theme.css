@@ -270,14 +270,16 @@ select.dropdown {
   height: var(--header-height);
 }
 
+.mod-right-split .workspace-tab-header-container-inner,
 .mod-left-split .workspace-tab-header-container-inner {
   gap: 0;
 }
-
+.mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
   border-radius: 0;
 }
 
+.mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
   border-top: 1px solid var(--border-highlight);
   border-left: 1px solid var(--border-highlight);
@@ -289,6 +291,7 @@ select.dropdown {
   box-shadow: none;
 }
 
+.mod-right-split .workspace-tab-header.is-active,
 .mod-left-split .workspace-tab-header.is-active {
   border-top: 1px solid var(--tab-outline-color);
   border-left: 1px solid var(--tab-outline-color);
@@ -377,6 +380,9 @@ select.dropdown {
   height: var(--header-height);
   /* todo: make this more dynamic */
   background-color: var(--background-primary);
+}
+
+.mod-left-split .nav-header {
   border-left: var(--divider-width) solid var(--border-highlight);
 }
 
@@ -401,6 +407,12 @@ select.dropdown {
 
 .tree-item-self.is-being-renamed:focus-within {
   color: var(--tab-text-color-active);
+}
+
+/* vault switcher */
+.workspace-sidedock-vault-profile {
+  border-left: 1px solid var(--border-highlight);
+  border-bottom: 1px solid var(--border-shadow);
 }
 
 /* scroll bar */
