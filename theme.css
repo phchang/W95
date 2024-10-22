@@ -264,17 +264,22 @@ select.dropdown {
 }
 
 .workspace-tab-container .view-header {
-  margin-bottom: 1px;
 }
 
+.workspace-tab-container .view-header-title-container {
+  height: var(--header-height);
+}
+
+.mod-right-split .workspace-tab-header-container-inner,
 .mod-left-split .workspace-tab-header-container-inner {
   gap: 0;
 }
-
+.mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
   border-radius: 0;
 }
 
+.mod-right-split .workspace-tab-header,
 .mod-left-split .workspace-tab-header {
   border-top: 1px solid var(--border-highlight);
   border-left: 1px solid var(--border-highlight);
@@ -286,6 +291,7 @@ select.dropdown {
   box-shadow: none;
 }
 
+.mod-right-split .workspace-tab-header.is-active,
 .mod-left-split .workspace-tab-header.is-active {
   border-top: 1px solid var(--tab-outline-color);
   border-left: 1px solid var(--tab-outline-color);
@@ -341,6 +347,10 @@ select.dropdown {
   position: relative;
 }
 
+.workspace-ribbon {
+  border-right: var(--divider-width) solid var(--border-shadow);
+}
+
 .workspace-ribbon.mod-left:before {
   border-bottom: 1px solid var(--accent-1);
   opacity: 0;
@@ -367,9 +377,13 @@ select.dropdown {
 .nav-action-button:active {}
 
 .nav-header {
-  padding: 5px;
+  height: var(--header-height);
   /* todo: make this more dynamic */
   background-color: var(--background-primary);
+}
+
+.mod-left-split .nav-header {
+  border-left: var(--divider-width) solid var(--border-highlight);
 }
 
 .nav-files-container {
@@ -381,7 +395,6 @@ select.dropdown {
 .nav-buttons-container {
   padding: 0;
   gap: 0;
-  margin-bottom: 1px;
 }
 
 .inline-title {
@@ -394,6 +407,12 @@ select.dropdown {
 
 .tree-item-self.is-being-renamed:focus-within {
   color: var(--tab-text-color-active);
+}
+
+/* vault switcher */
+.workspace-sidedock-vault-profile {
+  border-left: 1px solid var(--border-highlight);
+  border-bottom: 1px solid var(--border-shadow);
 }
 
 /* scroll bar */
